@@ -1,0 +1,369 @@
+/* Variables and maps */
+/* Media queries - MIN */
+@media screen and (min-width: 1000px) {
+  .zk-text-block {
+    font-size: 1.2em !important;
+  }
+}
+
+/* Media queries - MAX */
+@media screen and (max-width: 1000px) {
+  .zk-block-text-left {
+    margin-right: 0 !important;
+  }
+  .zk-block-text-right {
+    margin-left: 0 !important;
+  }
+  .zk-img-block img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .zk-block-text-right {
+    margin-top: 3px !important;
+  }
+  .zk-block-text-left {
+    margin-top: 3px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .zk-text-block {
+    font-size: 0.8em !important;
+  }
+  .zk-block {
+    position: relative;
+  }
+  .zk-img-block {
+    margin-top: 0 !important;
+  }
+  .btn-intro img, .btn-next img {
+    height: 20px !important;
+    width: 35px !important;
+  }
+  .btn-intro {
+    padding: 0.4em 0.8em 0.2em 0.8em !important;
+  }
+  .btn-next {
+    padding: 1em 1em 0.4em 1em !important;
+  }
+  .intro {
+    font-size: 0.8em !important;
+  }
+  .tech img {
+    height: 35px !important;
+    width: 35px !important;
+    -webkit-transition: 0.5s all ease !important;
+    transition: 0.5s all ease !important;
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
+
+/* HTML in body settings */
+html {
+  /*sets what shows when content overflows a block-level element's left and right edges*/
+  overflow-x: hidden;
+  /* sets how the total width and height of an element is calculated */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body,
+html {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  /*font-weight: map-get($font-weights, high);*/
+  line-height: 1.5;
+}
+
+/* Intro design */
+.intro {
+  background-image: url("../img/intro.jpg");
+  height: 100vh;
+  letter-spacing: 5px;
+  font-family: Century Gothic, sans-serif;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .75;
+}
+
+.zk-intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  border-radius: 10px;
+}
+
+/* Components design */
+.zk-btn-down {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10em;
+}
+
+.zk-content {
+  padding: 0.1em 16px;
+  max-width: 980px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-items: center;
+}
+
+.zk-block {
+  font-family: Century Gothic, sans-serif;
+  padding: 12px 24px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.zk-block-text-left {
+  margin-right: 25em;
+}
+
+.zk-block-text-right {
+  margin-left: 25em;
+}
+
+.zk-img-block {
+  margin-top: -15em;
+}
+
+.zk-text-block {
+  text-align: justify;
+}
+
+.zk-img-left {
+  float: left;
+}
+
+.zk-img-right {
+  float: right;
+}
+
+.zk-img-block img {
+  height: 100%;
+  width: 60%;
+}
+
+/* General design */
+.zk-pt-1 {
+  padding-top: 0.2em;
+}
+
+.zk-pt-2 {
+  padding-top: 0.5em;
+}
+
+.zk-pt-3 {
+  padding-top: 1em;
+}
+
+.zk-pt-4 {
+  padding-top: 2.5em;
+}
+
+.zk-pt-5 {
+  padding-top: 5em;
+}
+
+.zk-pb-1 {
+  padding-bottom: 0.2em;
+}
+
+.zk-pb-2 {
+  padding-bottom: 0.5em;
+}
+
+.zk-pb-3 {
+  padding-bottom: 1em;
+}
+
+.zk-pb-4 {
+  padding-bottom: 2.5em;
+}
+
+.zk-pb-5 {
+  padding-bottom: 5em;
+}
+
+.zk-mt-1 {
+  margin-top: 0.2em;
+}
+
+.zk-mt-2 {
+  margin-top: 0.5em;
+}
+
+.zk-mt-3 {
+  margin-top: 1em;
+}
+
+.zk-mt-4 {
+  margin-top: 2.5em;
+}
+
+.zk-mt-5 {
+  margin-top: 5em;
+}
+
+/**/
+.zk-bg-color {
+  background: #aaa;
+  opacity: .8;
+}
+
+.zk-center {
+  text-align: center;
+}
+
+.zk-rounded {
+  border-radius: 10px;
+}
+
+/* form */
+.contact {
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Century Gothic, sans-serif;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Button Next from intro*/
+.btn-intro {
+  color: #fff;
+  background-color: gray;
+  opacity: .8;
+  padding: .6em 1em .4em 1em;
+  border: none;
+  border-radius: 10em;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Button Next others*/
+.btn-next {
+  color: #fff;
+  background-color: gray;
+  opacity: .8;
+  padding: 2em 1em .4em 1em;
+  margin-top: 20px;
+  border-radius: 10em;
+  cursor: pointer;
+}
+
+/* Button Back-to-top */
+.btn-up {
+  background-color: gray;
+  border-radius: 10em;
+  color: black;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0.7;
+}
+
+.btn-up img {
+  margin-top: 5px;
+}
+
+/* Tech */
+.tech a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tech img {
+  height: 60px;
+  width: 60px;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/* Footer */
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: gray;
+}
+
+#footer img {
+  height: 30px;
+  width: 30px;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#footer .social {
+  margin-bottom: 10px;
+}
+
+#footer .social a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#footer a:hover img {
+  height: 35px;
+  width: 35px;
+  margin-top: -10px;
+}
+/*# sourceMappingURL=main.css.map */
